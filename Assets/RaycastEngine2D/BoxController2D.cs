@@ -9,7 +9,6 @@ namespace RaycastEngine2D
         [HideInInspector] public CollisionInfo Collisions;
         [HideInInspector] public RaycastOrigins RayCastOrigins;
 
-       
         public void Move(Vector3 velocity)
         {
             UpdateRaycastOrigins();
@@ -31,7 +30,6 @@ namespace RaycastEngine2D
 
         internal override void CheckHorizontalCollisions(ref Vector3 velocity)
         {
-            
             var rayOrigin = RayCastOrigins.Center;
             var rayLength = Mathf.Abs(velocity.x) + SKINWIDTH;
             var directionX = Mathf.Sign(velocity.x);
