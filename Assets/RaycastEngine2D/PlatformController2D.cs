@@ -16,13 +16,19 @@ namespace RaycastEngine2D
 
             var velocity = _moveDirection * Time.deltaTime;
 
-            MovePassengers(velocity);
-
+            CalculatePassengerMovement(velocity);
+            
+            MovePassengers(true);
             transform.Translate(velocity);
         }
 
+        private void MovePassengers(bool beforeMovePlatform)
+        {
+            // TODO 
+        }
+
         // TODO : Check if this is really needed, the normal collision checking also works
-        private void MovePassengers(Vector3 velocity)
+        private void CalculatePassengerMovement(Vector3 velocity)
         {
             var rayOrigin = RayCastOrigins.Center;
             
