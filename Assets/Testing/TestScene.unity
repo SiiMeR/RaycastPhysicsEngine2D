@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 607849963}
   - component: {fileID: 607849965}
   - component: {fileID: 607849966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607849962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.198, y: -2.36, z: 0}
+  m_LocalPosition: {x: -22.06, y: 1.86, z: 0}
   m_LocalScale: {x: 3.114517, y: 0.38, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -237,7 +237,7 @@ MonoBehaviour:
   _passengerMask:
     serializedVersion: 2
     m_Bits: 512
-  move: {x: 0, y: 0.5, z: 0}
+  _moveDirection: {x: 0, y: -10, z: 0}
 --- !u!1 &1199771299
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199771299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -21.862, y: 2.758, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1396262909}
